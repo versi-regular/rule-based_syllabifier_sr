@@ -6,4 +6,4 @@ This repository hosts the code of a rule-based syllabifier for Serbian based on 
 * Kovač, A. & Marković, M. (2018). A Rule-Based Syllabifier for Serbian. In Fišer, D. & Pančur, A. (Eds.) *Proceedings of the conference on Language Technologies and Digital Humanities 2018* (140–146). Ljubljana, Slovenia: Ljubljana University Press.
 * Kovač, A. & Marković, M. (2019). A Mixed-principle Rule-based Approach to the Automatic Syllabification of Serbian. *Contributions to Contemporary History 59(1)*. Retrieved from [http://ojs.inz.si/pnz/article/view/332](http://ojs.inz.si/pnz/article/view/332)
 
-**Licensed under the GNU General Public License v3.0**
+**Licensed under the GNU General Public License v3.0**.
