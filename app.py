@@ -11,7 +11,9 @@ def form():
 def response():
     if request.method == 'POST':
         form_data = request.form
-        return render_template('syllabified.html', form_data=form_data)
+        for _, value in form_data.items():
+            text = value
+        return render_template('syllabifier.html', text=text)
 
 if __name__ == '__main__':
     app.run()

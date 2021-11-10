@@ -8,23 +8,29 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+
         <title>Silabifikator</title>
     </head>
     <body class="gradient-bg">
-        <div class="container">
+        <div class="container col-10 offset-1 col-md-6 offset-md-3 mt-5 pb-3 pl-4 pr-4 white-bg gentle-shadow rounded">
             <div class="row pt-4">
-                <div class="col-sm-8 offset-sm-2 col-md-6 offset-sm-3 text-center">
-                    <h1 class="text-uppercase text-white">Silabifikator za srpski jezik</h1>
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h1 class="font-weight-bold">Silabifikator za srpski jezik</h1>
                 </div>
             </div>
             <div class="row pt-4">
-                <div class="col-sm-8 offset-sm-2 col-md-4 offset-sm-4 text-center">
+                <div class="col-lg-8 offset-lg-2 text-center">
                     <form class="form-horizontal" action="/" method = "POST">
                         <div class="form-group">
-                            <textarea class="full-width" name="to_syllabify" placeholder="Unesi tekst za silabifikaciju" rows="5"></textarea>
+                            <textarea class="full-width rounded" name="to_syllabify" placeholder="Unesi tekst za silabifikaciju" rows="5">{% if text:%}{{ text }}{% endif %}</textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default">Podeli na slogove</button>
+                            <button type="submit" class="btn btn-default accent-btn">Podeli na slogove</button>
                         </div>
                     </form>
                 </div>
