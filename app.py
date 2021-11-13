@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from syllabifier import syllabify
+from source.syllabifier import syllabify
 app = Flask(__name__)
 
 
