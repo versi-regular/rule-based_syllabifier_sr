@@ -1,5 +1,5 @@
 from srtools import latin_to_cyrillic, cyrillic_to_latin
-from get_indices import get_sound_type_indices
+from source.get_indices import get_sound_type_indices
 
 
 def syllabify(text):
